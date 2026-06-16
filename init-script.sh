@@ -3,7 +3,7 @@
 # SPDX-License-Identifier: MPL-2.0
 #!/bin/bash
 
-sudo echo "ubuntu:data2go!" | chpasswd
+sudo echo "ubuntu:ubuntu" | chpasswd
 sudo sed -i 's/^PasswordAuthentication no/PasswordAuthentication yes/' /etc/ssh/sshd_config
 sudo sed -i 's/^PasswordAuthentication no/PasswordAuthentication yes/' /etc/ssh/sshd_config.d/*
 sudo /etc/init.d/ssh restart
